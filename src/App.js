@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("skills");
-
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
-
   return (
     <div>
       {/* Header Section */}
@@ -45,47 +39,30 @@ function App() {
                 I thrive on solving complex problems and building innovative
                 solutions.
               </p>
-              <div className="tabs">
-                <button
-                  className={activeTab === "skills" ? "active-tab" : ""}
-                  onClick={() => handleTabChange("skills")}
-                >
-                  Skills
-                </button>
-                <button
-                  className={activeTab === "experience" ? "active-tab" : ""}
-                  onClick={() => handleTabChange("experience")}
-                >
-                  Experience
-                </button>
-                <button
-                  className={activeTab === "education" ? "active-tab" : ""}
-                  onClick={() => handleTabChange("education")}
-                >
-                  Education
-                </button>
-              </div>
-              <div className="tab-content">
-                {activeTab === "skills" && (
+              <div className="about-columns">
+                <div className="about-column">
+                  <h3>Skills</h3>
                   <ul>
                     <li>Web Development (React, HTML/CSS)</li>
                     <li>DevOps (Azure, Kubernetes, Terraform)</li>
                     <li>Programming Languages (Java, Python, Bash)</li>
                   </ul>
-                )}
-                {activeTab === "experience" && (
+                </div>
+                <div className="about-column">
+                  <h3>Experience</h3>
                   <ul>
                     <li>2022–Present: Worked at Shopify</li>
                     <li>2017–2022: Bank of America</li>
                     <li>2022: Microsoft</li>
                   </ul>
-                )}
-                {activeTab === "education" && (
+                </div>
+                <div className="about-column">
+                  <h3>Education</h3>
                   <ul>
                     <li>B.S. in Computer Science, UTD (2017)</li>
                     <li>M.S. in Software Engineering, UTD (Ongoing)</li>
                   </ul>
-                )}
+                </div>
               </div>
             </div>
           </div>
@@ -102,7 +79,7 @@ function App() {
               <h3>Machine Learning: Snake Game</h3>
               <p>
                 Enhancing Snake Game Strategy with Deep Reinforcement Learning
-                and Advanced Neural Networks
+                and Advanced Neural Networks.
               </p>
             </div>
             <div className="work-item">
@@ -110,7 +87,7 @@ function App() {
               <h3>Big Data: Kafka Connection to Reddit API</h3>
               <p>
                 From Reddit to Insights: A Big Data Pipeline for Entity
-                Recognition on Comments from Subreddit “news”
+                Recognition on Comments from Subreddit “news.”
               </p>
             </div>
             <div className="work-item">
@@ -126,40 +103,38 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" className="contact">
-        <div className="container">
-          <h2>Contact Me</h2>
-          <p>
-            I'd love to hear from you! Reach out via email or connect with me on
-            social platforms.
-          </p>
-          <p>
-            <strong>Email:</strong> amber@example.com
-          </p>
-          <p>
-            <strong>Phone:</strong> (123) 456-7890
-          </p>
-          <div className="social-icons">
-            <a href="https://linkedin.com/in/amberhasan">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/amberhasan">
-              <i className="fab fa-github"></i>
-            </a>
+        <div className="container contact-layout">
+          {/* Contact Info */}
+          <div className="contact-info">
+            <h2>Contact Me</h2>
+            <p>
+              I'd love to hear from you! Reach out via email or connect with me
+              on social platforms.
+            </p>
+            <p>
+              <strong>Email:</strong> amber@example.com
+            </p>
+            <p>
+              <strong>Phone:</strong> (123) 456-7890
+            </p>
+            <div className="social-icons">
+              <a href="https://linkedin.com/in/amberhasan">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/amberhasan">
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* Resume Section */}
-      <section id="resume" className="resume">
-        <div className="container">
-          <h2>My Resume</h2>
-          <iframe
-            src="/documents/resume.pdf"
-            title="Amber Hasan's Resume"
-            width="100%"
-            height="600px"
-            style={{ border: "none", marginTop: "20px" }}
-          ></iframe>
+          {/* Resume Viewer */}
+          <div className="resume-viewer">
+            <iframe
+              src="/documents/resume.pdf"
+              title="Amber Hasan's Resume"
+              className="resume-iframe"
+            ></iframe>
+          </div>
         </div>
       </section>
 
