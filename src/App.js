@@ -1,28 +1,11 @@
 import React from "react";
 import "./App.css";
 import PortfolioItem from "./PortfolioItem";
+import portfolioItems from "./portfolioData";
 
 function App() {
-  const portfolioItems = [
-    {
-      image: "/images/snake-game.png",
-      title: "Machine Learning: Snake Game",
-      description:
-        "Enhancing Snake Game Strategy with Deep Reinforcement Learning and Advanced Neural Networks.",
-    },
-    {
-      image: "/images/reddit-graph.png",
-      title: "Big Data: Kafka Connection to Reddit API",
-      description:
-        "From Reddit to Insights: A Big Data Pipeline for Entity Recognition on Comments from Subreddit “news.”",
-    },
-    {
-      image: "/images/connected-components.png",
-      title: "Big Data: Graph-Based Social Network Analysis",
-      description:
-        "Insights from Facebook's Dataset Using PySpark and GraphFrames.",
-    },
-  ];
+  // Define how many items should appear in each row
+  const itemsPerRow = 3;
 
   return (
     <div>
