@@ -1,13 +1,34 @@
 import React from "react";
 import "./App.css";
+import PortfolioItem from "./PortfolioItem";
 
 function App() {
+  const portfolioItems = [
+    {
+      image: "/images/snake-game.png",
+      title: "Machine Learning: Snake Game",
+      description:
+        "Enhancing Snake Game Strategy with Deep Reinforcement Learning and Advanced Neural Networks.",
+    },
+    {
+      image: "/images/reddit-graph.png",
+      title: "Big Data: Kafka Connection to Reddit API",
+      description:
+        "From Reddit to Insights: A Big Data Pipeline for Entity Recognition on Comments from Subreddit “news.”",
+    },
+    {
+      image: "/images/connected-components.png",
+      title: "Big Data: Graph-Based Social Network Analysis",
+      description:
+        "Insights from Facebook's Dataset Using PySpark and GraphFrames.",
+    },
+  ];
+
   return (
     <div>
       {/* Header Section */}
       <header className="header">
         <nav>
-          <img src="/images/logo.png" alt="Logo" className="logo" />
           <ul>
             <li>
               <a href="#about">About</a>
@@ -16,7 +37,7 @@ function App() {
               <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">Resume</a>
             </li>
           </ul>
         </nav>
@@ -74,29 +95,14 @@ function App() {
         <div className="container">
           <h2>My Work</h2>
           <div className="work-gallery">
-            <div className="work-item">
-              <img src="/images/snake-game.png" alt="Project 1" />
-              <h3>Machine Learning: Snake Game</h3>
-              <p>
-                Enhancing Snake Game Strategy with Deep Reinforcement Learning
-                and Advanced Neural Networks.
-              </p>
-            </div>
-            <div className="work-item">
-              <img src="/images/reddit-graph.png" alt="Project 2" />
-              <h3>Big Data: Kafka Connection to Reddit API</h3>
-              <p>
-                From Reddit to Insights: A Big Data Pipeline for Entity
-                Recognition on Comments from Subreddit “news.”
-              </p>
-            </div>
-            <div className="work-item">
-              <img src="/images/connected-components.png" alt="Project 3" />
-              <h3>Big Data: Graph-Based Social Network Analysis</h3>
-              <p>
-                Insights from Facebook's Dataset Using PySpark and GraphFrames.
-              </p>
-            </div>
+            {portfolioItems.map((item, index) => (
+              <PortfolioItem
+                key={index}
+                image={item.image}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
           </div>
         </div>
       </section>
