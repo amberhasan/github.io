@@ -104,29 +104,6 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact">
         <div className="container contact-layout">
-          {/* Contact Info */}
-          <div className="contact-info">
-            <h2>Contact Me</h2>
-            <p>
-              I'd love to hear from you! Reach out via email or connect with me
-              on social platforms.
-            </p>
-            <p>
-              <strong>Email:</strong> amber@example.com
-            </p>
-            <p>
-              <strong>Phone:</strong> (123) 456-7890
-            </p>
-            <div className="social-icons">
-              <a href="https://linkedin.com/in/amberhasan">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/amberhasan">
-                <i className="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-
           {/* Resume Viewer */}
           <div className="resume-viewer">
             <iframe
