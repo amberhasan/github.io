@@ -37,7 +37,6 @@ function App() {
                       className="profile-pic"
                     />
                     <div>
-                      <h2>About Me</h2>
                       <p>
                         I'm a passionate software developer with a strong
                         interest in <b>DevOps, Web Development,</b> and{" "}
@@ -72,7 +71,6 @@ function App() {
 
                       {/* Resume Section */}
                       <div className="resume-section">
-                        <h3>Resume</h3>
                         <iframe
                           src="/documents/resume.pdf"
                           title="Amber Hasan's Resume"
