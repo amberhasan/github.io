@@ -17,7 +17,7 @@ function App() {
                 <Link to="/">About</Link>
               </li>
               <li>
-                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/portfolio">Projects</Link>
               </li>
             </ul>
           </nav>
@@ -96,7 +96,6 @@ function App() {
             element={
               <section id="portfolio" className="portfolio">
                 <div className="container">
-                  <h2>My Work</h2>
                   <div className="work-gallery">
                     {portfolioItems.map((item, index) => (
                       <PortfolioItem
