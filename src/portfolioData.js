@@ -44,7 +44,7 @@ const portfolioItems = [
       "Built a UI and a complete backend in SQL with UML Database Design. Built a library management system with UI using Java FX and SQL Management Studio.",
   },
   {
-    image: "/images/home-readiness.png",
+    image: "/images/acne.png",
     title:
       "Roboflow AI / Open AI API / Flask Python: Acne Be Gone! (UTD's Axxess Hackathon)",
     description:
@@ -56,6 +56,20 @@ const portfolioItems = [
       "React Native Mobile App, Google Maps API: Safety Map Alert (SheHacks8+ Western University Hackathon)",
     description:
       "A mobile app that lets users pin/comment on sketchy areas and view crime data by zip code. Connects to 7 API’s including Google Maps Basic API, Google Maps Geocoding API, Google Maps Marker API, Crime Data by Zip Code API. Created at SheHacks8+ hackathon, this project was one of the Top 5 Projects chosen to present in the final round.",
+  },
+  {
+    image: "/images/home-readiness.png",
+    title:
+      "MERN (MongoDB, Express, React, NodeJS) Stack Web Application: Home Buying Readiness Calculator Web App (HackUTD)",
+    description:
+      "In HackUTD 2023's Fidelity challenge, my teammate and I built a React web application with a MongoDB backend (the MERN stack). Users input their financial info, and the output tells them their readiness/eligibility status to buy the house they want.",
+  },
+  {
+    image: "/images/capfluencer.png",
+    title:
+      "React Native / Firebase: Instagram Captioning Mobile App (for client)",
+    description:
+      "I developed a caption app from scratch using React Native and Firebase based on the client's designs. It is currently on the iOS app store under the name, Capfluencer.",
   },
 ];
 
