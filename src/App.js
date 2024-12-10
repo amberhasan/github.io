@@ -4,7 +4,7 @@ import "./styles/App.css"; // Correct relative path for App.css
 import Card from "./components/Card"; // Correct relative path for Card.js
 import PortfolioItem from "./components/PortfolioItem"; // Correct relative path for PortfolioItem.js
 import portfolioItems from "./data/portfolioData"; // Correct relative path for portfolioData.js
-import userImage from "./assets/images/user.png";
+import aboutData from "./data/aboutData"; // Import the about data
 
 function App() {
   return (
@@ -35,36 +35,13 @@ function App() {
                   <div className="about-content">
                     <div>
                       <div className="about-columns">
-                        <Card items={[userImage]} />
-                        <Card
-                          title="About Me"
-                          items={[
-                            "I'm a passionate software developer with a strong interest in DevOps, Web Development, and Cloud Technologies. I thrive on solving complex problems and building innovative solutions.",
-                          ]}
-                        />
-                        <Card
-                          title="Skills"
-                          items={[
-                            "Web Development (React, HTML/CSS)",
-                            "DevOps (Azure, Kubernetes, Terraform)",
-                            "Programming Languages (Java, Python, Bash)",
-                          ]}
-                        />
-                        <Card
-                          title="Experience"
-                          items={[
-                            "2022–Present: Worked at Shopify",
-                            "2017–2022: Bank of America",
-                            "2022: Microsoft",
-                          ]}
-                        />
-                        <Card
-                          title="Education"
-                          items={[
-                            "B.S. in Computer Science, UTD (2017)",
-                            "M.S. in Software Engineering, UTD (Ongoing)",
-                          ]}
-                        />
+                        {aboutData.map((data, index) => (
+                          <Card
+                            key={index}
+                            title={data.title}
+                            items={data.items}
+                          />
+                        ))}
                       </div>
 
                       {/* Resume Section */}

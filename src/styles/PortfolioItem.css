@@ -1,3 +1,4 @@
+/* Outer Container */
 .work-item {
   text-align: center;
   background: #fff;
@@ -7,21 +8,28 @@
   transition: transform 0.2s ease-in-out;
 }
 
+/* Image Styling */
 .work-item img {
   max-width: 100%;
   border-radius: 10px;
+  border: 2px solid black; /* Black border around the image */
+  margin-bottom: 10px; /* Space between image and text */
 }
 
+/* Title Styling */
 .work-item h3 {
   margin-top: 10px;
   font-size: 1.2rem;
+  color: #333;
 }
 
+/* Description Styling */
 .work-item p {
   font-size: 1rem;
   color: #555;
 }
 
+/* Hover Effect */
 .work-item:hover {
   transform: scale(1.05);
 }
