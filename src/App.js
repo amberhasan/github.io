@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import PortfolioItem from "./PortfolioItem";
 import portfolioItems from "./portfolioData";
-import Resume from "./Resume";
 
 function App() {
   return (
@@ -19,20 +18,17 @@ function App() {
               <li>
                 <Link to="/portfolio">Portfolio</Link>
               </li>
-              <li>
-                <Link to="/resume">Resume</Link>
-              </li>
             </ul>
           </nav>
         </header>
 
-        {/* Routing */}
+        {/* Routes */}
         <Routes>
+          {/* About Page */}
           <Route
             path="/"
             element={
               <section id="about" className="about">
-                {/* About Section */}
                 <div className="container">
                   <div className="about-content">
                     <img
@@ -73,12 +69,29 @@ function App() {
                           </ul>
                         </div>
                       </div>
+
+                      {/* Resume Section */}
+                      <div className="resume-section">
+                        <h3>Resume</h3>
+                        <iframe
+                          src="/documents/resume.pdf"
+                          title="Amber Hasan's Resume"
+                          style={{
+                            width: "100%",
+                            height: "500px",
+                            border: "none",
+                            marginTop: "20px",
+                          }}
+                        ></iframe>
+                      </div>
                     </div>
                   </div>
                 </div>
               </section>
             }
           />
+
+          {/* Portfolio Page */}
           <Route
             path="/portfolio"
             element={
@@ -99,7 +112,6 @@ function App() {
               </section>
             }
           />
-          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
     </Router>
