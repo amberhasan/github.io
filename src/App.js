@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import "./App.css";
-import Card from "./Card"; // Import the Card component
-import PortfolioItem from "./PortfolioItem";
-import portfolioItems from "./portfolioData";
+import "./styles/App.css"; // Correct relative path for App.css
+import Card from "./components/Card"; // Correct relative path for Card.js
+import PortfolioItem from "./components/PortfolioItem"; // Correct relative path for PortfolioItem.js
+import portfolioItems from "./data/portfolioData"; // Correct relative path for portfolioData.js
+import userImage from "./assets/images/user.png";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
                   <div className="about-content">
                     <div>
                       <div className="about-columns">
-                        <Card items={["/images/user.png"]} />
+                        <Card items={[userImage]} />
                         <Card
                           title="About Me"
                           items={[
