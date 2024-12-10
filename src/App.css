@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Yeseva+One&display=swap");
+
 /* General Styles */
 body {
   margin: 0;
@@ -130,4 +132,22 @@ footer {
   padding: 20px 0;
   background: #111;
   color: white;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-family: "Yeseva One", serif;
+}
+
+.card {
+  font-family: "Playfair Display", serif;
+}
+
+.photo-card {
+  font-family: "Amsterdam Two", cursive;
+  font-size: 1.2rem;
+  color: #333;
 }
