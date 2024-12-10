@@ -38,13 +38,13 @@ function App() {
                       className="profile-pic"
                     />
                     <div>
-                      <p>
-                        I'm a passionate software developer with a strong
-                        interest in <b>DevOps, Web Development,</b> and{" "}
-                        <b>Cloud Technologies.</b> I thrive on solving complex
-                        problems and building innovative solutions.
-                      </p>
                       <div className="about-columns">
+                        <Card
+                          title="About Me"
+                          items={[
+                            "I'm a passionate software developer with a strong interest in DevOps, Web Development, and Cloud Technologies. I thrive on solving complex problems and building innovative solutions.",
+                          ]}
+                        />
                         <Card
                           title="Skills"
                           items={[
