@@ -34,3 +34,13 @@ body {
   background-attachment: fixed; /* Make the background fixed */
   color: #333;
 }
+
+.card-image {
+  width: 150px; /* Smaller size */
+  height: 200px; /* Keep it square */
+  object-fit: cover; /* Ensure the image fits properly */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  margin: 5px 0; /* Space around the image */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

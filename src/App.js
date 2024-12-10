@@ -32,13 +32,9 @@ function App() {
               <section id="about" className="about">
                 <div className="container">
                   <div className="about-content">
-                    <img
-                      src="/images/user.png"
-                      alt="Amber Hasan"
-                      className="profile-pic"
-                    />
                     <div>
                       <div className="about-columns">
+                        <Card items={["/images/user.png"]} />
                         <Card
                           title="About Me"
                           items={[

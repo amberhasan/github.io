@@ -1,4 +1,3 @@
-// Card.js
 import React from "react";
 import "./Card.css"; // Optional for specific card styling
 
@@ -8,7 +7,13 @@ function Card({ title, items }) {
       <h3>{title}</h3>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            {typeof item === "string" && item.endsWith(".png") ? (
+              <img src={item} alt="Card item" className="card-image" />
+            ) : (
+              item
+            )}
+          </li>
         ))}
       </ul>
     </div>
