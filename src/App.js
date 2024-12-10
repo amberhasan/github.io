@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
+import Card from "./Card"; // Import the Card component
 import PortfolioItem from "./PortfolioItem";
 import portfolioItems from "./portfolioData";
 
@@ -44,29 +45,29 @@ function App() {
                         problems and building innovative solutions.
                       </p>
                       <div className="about-columns">
-                        <div className="about-column">
-                          <h3>Skills</h3>
-                          <ul>
-                            <li>Web Development (React, HTML/CSS)</li>
-                            <li>DevOps (Azure, Kubernetes, Terraform)</li>
-                            <li>Programming Languages (Java, Python, Bash)</li>
-                          </ul>
-                        </div>
-                        <div className="about-column">
-                          <h3>Experience</h3>
-                          <ul>
-                            <li>2022–Present: Worked at Shopify</li>
-                            <li>2017–2022: Bank of America</li>
-                            <li>2022: Microsoft</li>
-                          </ul>
-                        </div>
-                        <div className="about-column">
-                          <h3>Education</h3>
-                          <ul>
-                            <li>B.S. in Computer Science, UTD (2017)</li>
-                            <li>M.S. in Software Engineering, UTD (Ongoing)</li>
-                          </ul>
-                        </div>
+                        <Card
+                          title="Skills"
+                          items={[
+                            "Web Development (React, HTML/CSS)",
+                            "DevOps (Azure, Kubernetes, Terraform)",
+                            "Programming Languages (Java, Python, Bash)",
+                          ]}
+                        />
+                        <Card
+                          title="Experience"
+                          items={[
+                            "2022–Present: Worked at Shopify",
+                            "2017–2022: Bank of America",
+                            "2022: Microsoft",
+                          ]}
+                        />
+                        <Card
+                          title="Education"
+                          items={[
+                            "B.S. in Computer Science, UTD (2017)",
+                            "M.S. in Software Engineering, UTD (Ongoing)",
+                          ]}
+                        />
                       </div>
 
                       {/* Resume Section */}
