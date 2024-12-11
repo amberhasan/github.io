@@ -21,14 +21,7 @@ function About() {
               solutions.
             </p>
             <div className="about-columns">
-              <div className="about-column">
-                <h3>Skills</h3>
-                <ul>
-                  <li>Web Development (React, HTML/CSS)</li>
-                  <li>DevOps (Azure, Kubernetes, Terraform)</li>
-                  <li>Programming Languages (Java, Python, Bash)</li>
-                </ul>
-              </div>
+              <div className="about-column"></div>
               <div className="about-column">
                 <h3>Experience</h3>
                 <ul>

@@ -1,91 +1,70 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import "./styles/App.css"; // Correct relative path for App.css
-import Card from "./components/Card"; // Correct relative path for Card.js
-import PortfolioItem from "./components/PortfolioItem"; // Correct relative path for PortfolioItem.js
-import portfolioItems from "./data/portfolioData"; // Correct relative path for portfolioData.js
-import aboutData from "./data/aboutData"; // Import the about data
+import "./styles/App.css";
+import Card from "./components/Card";
+import PortfolioItem from "./components/PortfolioItem";
+import portfolioItems from "./data/portfolioData";
+import aboutData from "./data/aboutData";
+
+const AboutSection = () => (
+  <section id="about" className="about">
+    <div className="container">
+      <div className="about-content">
+        <div className="about-columns">
+          {aboutData.map((data, index) => (
+            <Card key={index} title={data.title} items={data.items} />
+          ))}
+        </div>
+        <iframe
+          src="/documents/resume.pdf"
+          title="Amber Hasan's Resume"
+          className="resume-iframe"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+);
+
+const PortfolioSection = () => (
+  <section id="portfolio" className="portfolio">
+    <div className="container">
+      <div className="work-gallery">
+        {portfolioItems.map((item, index) => (
+          <PortfolioItem
+            key={index}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 function App() {
   return (
     <Router>
-      <div>
-        {/* Header Section */}
-        <header className="header">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">About</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Projects</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
-        {/* Routes */}
-        <Routes>
-          {/* About Page */}
-          <Route
-            path="/"
-            element={
-              <section id="about" className="about">
-                <div className="container">
-                  <div className="about-content">
-                    <div>
-                      <div className="about-columns">
-                        {aboutData.map((data, index) => (
-                          <Card
-                            key={index}
-                            title={data.title}
-                            items={data.items}
-                          />
-                        ))}
-                      </div>
-
-                      {/* Resume Section */}
-                      <div className="resume-section">
-                        <iframe
-                          src="/documents/resume.pdf"
-                          title="Amber Hasan's Resume"
-                          style={{
-                            width: "100%",
-                            height: "500px",
-                            border: "none",
-                            marginTop: "20px",
-                          }}
-                        ></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            }
-          />
-
-          {/* Portfolio Page */}
-          <Route
-            path="/portfolio"
-            element={
-              <section id="portfolio" className="portfolio">
-                <div className="container">
-                  <div className="work-gallery">
-                    {portfolioItems.map((item, index) => (
-                      <PortfolioItem
-                        key={index}
-                        image={item.image}
-                        title={item.title}
-                        description={item.description}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </section>
-            }
-          />
-        </Routes>
-      </div>
+      <header className="header">
+        <nav>
+          <ul className="nav-buttons">
+            <li>
+              <Link to="/" className="button-link">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" className="button-link">
+                Projects
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <Routes>
+        <Route path="/" element={<AboutSection />} />
+        <Route path="/portfolio" element={<PortfolioSection />} />
+      </Routes>
     </Router>
   );
 }

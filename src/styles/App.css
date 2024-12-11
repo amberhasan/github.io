@@ -24,7 +24,7 @@ body {
   gap: 15px;
 }
 .header nav ul li a {
-  color: white;
+  color: 333;
   text-decoration: none;
   font-weight: bold;
 }
@@ -146,7 +146,35 @@ h1 {
   font-family: "Cormorant", serif;
 }
 
-.photo-card {
-  font-size: 1.2rem;
-  color: #333;
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: 333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.nav-buttons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.button-link {
+  text-decoration: none;
+  color: #333; /* Dark text for contrast */
+  background-color: #808080; /* Light pink background */
+  padding: 10px 30px; /* Adjust padding for a rectangular look */
+  border-radius: 5px; /* Small border radius for slight rounding */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #808080; /* Slightly darker pink on hover */
+  transform: scale(1.05); /* Subtle hover effect */
 }
