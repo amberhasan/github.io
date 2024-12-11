@@ -29,7 +29,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-image: url("../assets/images/marble.avif"); /* Relative path for public folder */
+  background-image: url("../assets/images/texture.png"); /* Relative path for public folder */
   background-size: cover; /* Cover the entire viewport */
   background-repeat: no-repeat; /* Avoid tiling */
   background-attachment: fixed; /* Make the background fixed */

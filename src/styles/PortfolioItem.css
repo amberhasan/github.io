@@ -1,35 +1,40 @@
-/* Outer Container */
+/* Adjusted Card Styles */
 .work-item {
   text-align: center;
   background: #fff;
-  padding: 15px;
+  padding: 10px; /* Reduce padding */
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
+  max-width: 280px; /* Set max width for smaller cards */
+  margin: 0 auto; /* Center-align cards within the container */
 }
 
-/* Image Styling */
 .work-item img {
   max-width: 100%;
   border-radius: 10px;
-  border: 2px solid black; /* Black border around the image */
-  margin-bottom: 10px; /* Space between image and text */
+  border: 2px solid #ddd;
+  margin-bottom: 8px; /* Adjust spacing */
 }
 
-/* Title Styling */
 .work-item h3 {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  margin-top: 8px; /* Adjust title spacing */
+  font-size: 1rem; /* Reduce font size */
   color: #333;
 }
 
-/* Description Styling */
 .work-item p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Adjust text size */
   color: #555;
+  line-height: 1.4;
 }
 
-/* Hover Effect */
-.work-item:hover {
-  transform: scale(1.05);
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Adjust columns for smaller cards */
+  gap: 15px; /* Adjust spacing between cards */
+  padding: 20px; /* Reduce overall padding */
 }
