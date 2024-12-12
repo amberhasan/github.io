@@ -78,3 +78,7 @@ rm -rf build
 git add .
 git commit -m "Deploy site"
 git push origin main
+
+1. Go to gh-pages branch
+2. Do npm run deploy
+3. But make sure the branch has everything you want. I usually reset hard with the main branch stuff.
