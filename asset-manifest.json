@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9e0ed87.css",
-    "main.js": "/static/js/main.2469a763.js",
+    "main.css": "/static/css/main.59068184.css",
+    "main.js": "/static/js/main.dec89435.js",
     "static/js/488.4c88d3da.chunk.js": "/static/js/488.4c88d3da.chunk.js",
     "static/media/user.png": "/static/media/user.58c05afa08d88cdffa87.png",
     "static/media/snake-game.png": "/static/media/snake-game.7217c503e49016a4f9a9.png",
     "static/media/string-bar.png": "/static/media/string-bar.8b8fdf6c215dc45d277e.png",
+    "static/media/texture.png": "/static/media/texture.ca440db3f71b5a3cb7e8.png",
     "static/media/taekwondo-mobile.png": "/static/media/taekwondo-mobile.820a70b0a2b6efd3655a.png",
     "static/media/reddit-graph.png": "/static/media/reddit-graph.041cfc78d9cbde176134.png",
-    "static/media/marble.avif": "/static/media/marble.64d962a953b8f52a1081.avif",
     "static/media/naruto-mobile.png": "/static/media/naruto-mobile.ffa6ef56e9973dd4d10d.png",
     "static/media/connected-components.png": "/static/media/connected-components.de07716ef267abcf628b.png",
     "static/media/safeguard.png": "/static/media/safeguard.6f880d7c65de1159e023.png",
     "static/media/acne.png": "/static/media/acne.fcee36fdfdccc5e8c10a.png",
+    "static/media/ecosense.png": "/static/media/ecosense.a3883742d86fc9aca548.png",
     "static/media/capfluencer.png": "/static/media/capfluencer.1c353d0dd01224cc9d12.png",
     "static/media/library-db.png": "/static/media/library-db.bd47a20f8dc6b47750b1.png",
     "static/media/home-readiness.png": "/static/media/home-readiness.84c25ab1691d12a65561.png",
     "index.html": "/index.html",
-    "main.b9e0ed87.css.map": "/static/css/main.b9e0ed87.css.map",
-    "main.2469a763.js.map": "/static/js/main.2469a763.js.map",
+    "main.59068184.css.map": "/static/css/main.59068184.css.map",
+    "main.dec89435.js.map": "/static/js/main.dec89435.js.map",
     "488.4c88d3da.chunk.js.map": "/static/js/488.4c88d3da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9e0ed87.css",
-    "static/js/main.2469a763.js"
+    "static/css/main.59068184.css",
+    "static/js/main.dec89435.js"
   ]
 }
