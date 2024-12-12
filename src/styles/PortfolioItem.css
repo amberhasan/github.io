@@ -27,6 +27,16 @@
   font-size: 0.9rem; /* Adjust text size */
   color: #555;
   line-height: 1.4;
+  text-decoration: none; /* Removes the underline */
+}
+.work-item a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits text color */
+}
+
+.work-item a:hover {
+  text-decoration: none; /* Keeps it clean on hover */
+  color: inherit;
 }
 
 .work-gallery {

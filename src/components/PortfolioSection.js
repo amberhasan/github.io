@@ -1,4 +1,4 @@
-// src/components/PortfolioSection.js
+// PortfolioSection.js
 import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import portfolioItems from "../data/portfolioData";
@@ -13,6 +13,7 @@ const PortfolioSection = () => (
             image={item.image}
             title={item.title}
             description={item.description}
+            link={item.link} // Pass the link here
           />
         ))}
       </div>
